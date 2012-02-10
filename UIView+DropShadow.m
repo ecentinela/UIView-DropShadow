@@ -1,8 +1,9 @@
+#import <QuartzCore/QuartzCore.h>
 #import "UIView+DropShadow.h"
 
 @implementation UIView(DropShadow)
 
-- (void)dropShadowWithOffset:(CGSize)offset Radius:(CGFloat)radius Color:(UIColor *)color  Opacity:(CGFloat)opacity
+- (void)dropShadowWithOffset:(CGSize)offset Radius:(CGFloat)radius Color:(UIColor *)color Opacity:(CGFloat)opacity
 {
     // set properties
     self.layer.shadowColor = color.CGColor;
